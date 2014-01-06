@@ -1,0 +1,163 @@
+/* 
+ScrumScore.css 
+By Dan Giralte
+MIT No warrenty 2013
+*/
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q {	quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
+
+/* custom css */
+body
+{
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.dark8 { background-color:#005F85; }
+.dark7 { background-color:#0C82A0; }
+.dark6 { background-color:#249CB4; }
+.dark5 { background-color:#4DB1C1; }
+.dark4 { background-color:#01B8CA; }
+.dark3 { background-color:#3EC0D0; }
+.dark2 { background-color:#7FC7D3; }
+.dark1 { background-color:#B0E5E9; }
+
+#pingDiv { background-color:yellow; text-align: center; font-size: 8px;}
+
+h3
+{
+	text-align: center;
+	background-color:#B0E5E9; /* dark1 */
+	padding: 6px;
+}
+
+#projMgr 
+{
+	text-align: center;
+	width: 100%;
+	display: block;
+	padding: 6px 0;
+}
+
+#projMgr input[type=button]
+{
+	display:none;
+	background-color: #0C82A0; /* dark7 */
+	color: white;
+	border: 0 none;
+	border-radius: 0;
+	width: 200px;
+	margin: 2px auto;
+}
+
+#users
+{
+	display: none;
+	padding: 10px 0px;
+	background-color:#01B8CA; /* dark4 */
+}
+
+.userBlock
+{
+	padding: 5px 40px;
+
+}
+
+.userName
+{
+	display: inline;
+}
+
+.userScore
+{
+	display: inline;
+	float: right;
+	text-align: center;
+	width: 50px;
+	background-color:#005F85;
+	color: white;
+}
+
+#score
+{
+	display: none;
+	text-align: center;
+	background-color:#249CB4; /* dark6 */
+	padding: 10px 0px;
+}
+
+#score input[type=button]
+{
+	display:inline-block;
+	background-color: #0C82A0; /* dark7 */
+	color: white;
+	border: 0 none;
+	border-radius: 0;
+	width: 50px;
+	height: 50px;
+	margin: 2px auto;
+}
+
+.emer
+{
+	text-align: center;
+	font-size: 10px;
+	padding: 10px;
+}
+
+.emer input[type=button]
+{
+	background-color: #0C82A0; /* dark7 */
+	color: white;
+	border: 0 none;
+	border-radius: 0;
+	margin: 2px auto;
+	display: inline;
+}
+

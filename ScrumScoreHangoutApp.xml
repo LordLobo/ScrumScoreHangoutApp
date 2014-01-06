@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+
+<ModulePrefs title="Hangout Starter">
+  <Require feature="rpc" />
+  <Require feature="views" />
+	<Require feature="locked-domain" />
+</ModulePrefs>
+
+<Content type="html"><![CDATA[
+<!DOCTYPE html>
+<html>
+
+<link type="text/css" rel="stylesheet" href="//www.lordloboapps.net/ScrumScore/css/ScrumScore.css" />
+
+<body class="dark3">
+
+<div id="main">
+
+<h3>Scrumm Score</h3>
+
+<div id="pingDiv">
+</div>
+
+<div id="statusDiv">
+  <p id="status" style="color:red"></p>
+</div>
+
+<div id="projMgr">
+  <input type="button" 
+    value="PM Click when everyone is here" 
+    id="pmStart" 
+    onClick="startSession()" />
+
+  <input type="button" 
+    value="Show Votes" 
+    id="showVotes" 
+    onClick="showVotes()" />
+
+  <input type="button" 
+    value="Reset for New Votes" 
+    id="resetVotes" 
+    onClick="resetVotes()" />
+</div>
+
+<div id="users">
+
+</div>
+
+<div id="score">
+
+  <input type="button" class="scoreButton" value="0" onClick="submitScore('0')" />
+  <input type="button" class="scoreButton" value="1/2" onClick="submitScore('1/2')" />
+  <input type="button" class="scoreButton" value="1" onClick="submitScore('1')" />
+  <input type="button" class="scoreButton" value="2" onClick="submitScore('2')" />
+  <input type="button" class="scoreButton" value="3" onClick="submitScore('3')" />
+  <input type="button" class="scoreButton" value="5" onClick="submitScore('5')" />
+  <input type="button" class="scoreButton" value="8" onClick="submitScore('8')" />
+  <input type="button" class="scoreButton" value="13" onClick="submitScore('13')" />
+  <input type="button" class="scoreButton" value="20" onClick="submitScore('20')" />
+  <input type="button" class="scoreButton" value="40" onClick="submitScore('40')" />
+  <input type="button" class="scoreButton" value="100" onClick="submitScore('100')" />
+  <input type="button" class="scoreButton" value="inf" onClick="submitScore('inf')" />
+  <input type="button" class="scoreButton" value="???" onClick="submitScore('???')" />
+
+</div>
+
+<div class="emer">
+  Use only in emergency:
+  <input type="button" 
+    value="Reset App" 
+    onClick="resetApp()" />
+</div>
+
+<script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+<script src="//www.lordloboapps.net/ScrumScore/js/ScrumScore.js"></script>
+
+</body>
+]]>
+</Content>
+</Module>
+
